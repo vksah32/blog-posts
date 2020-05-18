@@ -45,6 +45,8 @@ dec := json.NewDecoder(file)
 
 - create an app in slack
 
+- Allow incoming Webhooks
+
 - Find the webhook url
 
 - Call this function
