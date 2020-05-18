@@ -4,8 +4,16 @@
 
 - write a dockerfile
 
-  ```
+  ```dockerfile
+  FROM golang:1.14.3-alpine3.11
+  ADD . ~/test
+  WORKDIR ~/test/src/main
+  CMD go run test.go
   
   ```
+  
+- build it
+	```bash
+	
 
   
