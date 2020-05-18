@@ -1,6 +1,6 @@
 # Common Go stuff
 
-## Write `{key, value}` data to json file
+### 1. Write `{key, value}` data to json file
 
 
 
@@ -38,4 +38,14 @@ dec := json.NewDecoder(file)
 
 
 ```
+
+
+
+Lknnkln klhnklnlk
+
+
+
+
+
+lknjnqdklqnwkdlnknn;
 
