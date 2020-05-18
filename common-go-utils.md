@@ -41,11 +41,7 @@ dec := json.NewDecoder(file)
 
 
 
-Lknnkln klhnklnlk
+### 2. Curl http url
 
 
-
-
-
-lknjnqdklqnwkdlnknn;
 
