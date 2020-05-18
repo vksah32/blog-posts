@@ -1,5 +1,5 @@
 #!/bin/bash
-fswatch -e ".*" -i "\\.md$" -x --event Created --event Updated -0 ./ | while read -d "" event 
+fswatch -e ".*" -i "\\.md$" -0 ./ | while read -d "" event 
 do 
     # check any untracked files
     for f in `git ls-files --others --exclude-standard`; do
