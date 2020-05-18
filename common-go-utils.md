@@ -41,7 +41,10 @@ dec := json.NewDecoder(file)
 
 
 
-### 2. Curl http url
+### 2. Send slack message to a channel
 
 
 
+- create an app in slack
+
+  
