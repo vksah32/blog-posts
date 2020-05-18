@@ -43,11 +43,11 @@ dec := json.NewDecoder(file)
 
 ### 2. Send slack message to a channel
 
-
-
 - create an app in slack
 
-- call this function
+- Find the webhook url
+
+- Call this function
 
   ```go
   func SendSlackNotification(webhookUrl string, msg string) error {
