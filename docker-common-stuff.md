@@ -26,6 +26,14 @@
 
 ## Common Docker  commands
 
+- list all docker processes on a current machine
+
+  ```bash
+  docker ps
+  ```
+
+- 
+
 - list all stacks
 
   ```bash
@@ -36,6 +44,12 @@
 
   ```bash
   docker stack services {{stack_name}}
+  ```
+
+- show logs for a docker process for a service in a stack
+
+  ```bash
+  docker service logs {{service_name}}
   ```
 
   
