@@ -25,3 +25,11 @@
 
 
 ## Common Docker  commands
+
+- list all stacks
+
+  ```bash
+  docker stack ls
+  ```
+
+- list services for a given stack 
