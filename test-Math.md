@@ -23,6 +23,8 @@ Inductive step: Let $n=k+1$. Then our left side is
 $$
 \sum_{i=1}^{k+1}i
 =\left(k+1\right)+\sum_{i=1}^{k}i\\
+$$
+$$
 =\left(k+1\right)+\frac{k \left( k+1 \right)}{2}
 $$
 
