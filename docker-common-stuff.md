@@ -35,7 +35,7 @@
 - list services for a given stack 
 
   ```bash
-  docker stack 
+  docker stack services {{stack_name}}
   ```
 
   
