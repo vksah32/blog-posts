@@ -32,7 +32,11 @@
   docker ps
   ```
 
-- 
+- show logs for container on the current machine
+
+  ```bash
+  docker logs {{container_name}}
+  ```
 
 - list all stacks
 
