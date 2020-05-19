@@ -26,7 +26,7 @@ $$
 =\left (k+1\right )+\frac{k\left ( k+1 \right )}{2}
 $$
 
-By our inductive hypothesis}
+By our inductive hypothesis
 $$
 =\frac{2\left (k+1 \right )}{2}+\frac{k\left (k+1 \right )}{2}\\
 =\frac{2\left (k+1 \right )+k\left (k+1 \right )}{2}\\
