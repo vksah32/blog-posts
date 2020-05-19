@@ -1,4 +1,4 @@
-# Docker common things
+# Docker things
 
 ### Simple case -> copy current directory and run a command
 
@@ -22,3 +22,6 @@
 	```
   
 
+
+
+## Common Docker  commands
