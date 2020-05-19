@@ -9,4 +9,7 @@ $$
 More math stuff:
 
 
-
+$$
+For any $n \in \mathbb{N}$, 
+\[$\sum_{i=1}^{n}i=\frac{n\left ( n+1 \right )}{2}$\]
+$$
