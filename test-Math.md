@@ -22,7 +22,7 @@ Inductive hypothesis: Suppose the theorem holds for all values of $n$ up to some
 Inductive step: Let $n=k+1$. Then our left side is
 $$
 \sum_{i=1}^{k+1}i
-=\left(k+1\right)+\sum_{i=1}^{k}i\\
+=\left(k+1\right)+\sum_{i=1}^{k}i
 $$
 
 $$
