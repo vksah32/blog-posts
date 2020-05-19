@@ -33,3 +33,9 @@
   ```
 
 - list services for a given stack 
+
+  ```bash
+  docker stack 
+  ```
+
+  
