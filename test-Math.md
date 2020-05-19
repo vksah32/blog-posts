@@ -16,7 +16,7 @@ $$
 
 proof:
 
-Base case $n=1$: If $n=1$, the left side is 1 and the right side is $\frac{1\left ( 2\right )}{2}=1$.
+Base case $$n$$: If $n=1$, the left side is 1 and the right side is $\frac{1\left ( 2\right )}{2}=1$.
 So, the theorem holds when $n=1$.
 Inductive hypothesis: Suppose the theorem holds for all values of $n$ up to some $k$, $k \geq 1$.
 Inductive step: Let $n=k+1$. Then our left side is
@@ -31,3 +31,5 @@ which is our right side. So, the theorem holds for $n=k+1$.
 By the principle of mathematical induction, the theorem holds for all $n \in \mathbb{N}$.
 
 
+
+$n=1$ 
