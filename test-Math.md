@@ -24,6 +24,7 @@ $$
 \sum_{i=1}^{k+1}i
 =\left(k+1\right)+\sum_{i=1}^{k}i\\
 $$
+
 $$
 =\left(k+1\right)+\frac{k \left( k+1 \right)}{2}
 $$
