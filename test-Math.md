@@ -10,6 +10,11 @@ More math stuff:
 
 
 $$
-\text{For any } $n \in \mathbb{N}$, 
-\[$\sum_{i=1}^{n}i=\frac{n\left ( n+1 \right )}{2}$\]
+\text{Theorem: For any } n \in \mathbb{N}, 
+\sum_{i=1}^{n}i=\frac{n\left ( n+1 \right )}{2}
 $$
+
+$$
+
+$$
+
