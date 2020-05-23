@@ -42,3 +42,10 @@ $$
 
 which is our right side. So, the theorem holds for $n=k+1$. 
 By the principle of mathematical induction, the theorem holds for all $n \in \mathbb{N}$.
+
+```go
+func a {
+  
+}
+```
+
