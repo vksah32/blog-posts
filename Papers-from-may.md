@@ -4,5 +4,6 @@
 - [Efficient Distributed Algorithms for the $K$-Nearest Neighbors Problem](http://arxiv.org/abs/2005.07373v2)
 - [A reduction of the dynamic time warping distance to the longest  increasing subsequence length](http://arxiv.org/abs/2005.09169v1)
 - [A Two-level Spatial In-Memory Index](http://arxiv.org/abs/2005.08600v1)
-- [Storing, preprocessing and analyzing Tweets: Finding the suitable NoSQL  system]()
+- [Storing, preprocessing and analyzing Tweets: Finding the suitable NoSQL  system](http://arxiv.org/abs/2005.01393v1)
+- 
 
