@@ -18,7 +18,7 @@
 
 ```bash
 
-[ -x "$(command -v some-program)" ] || echo "program not installed"; exit 1; }
+[ -x "$(command -v some-program)" ] || { echo "program not installed"; exit 1; }
 
 ```
 
