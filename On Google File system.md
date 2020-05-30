@@ -14,15 +14,20 @@
 - **Key observations:**
 
   - Single master architecture (but master state replicated in case master goes down)
+
+
   - client use a library to manage interactions with the file system
   - Read is straightforward; client gets chunk servers for a file from master and pings the nearest chunk server.
   - Write is pretty complicated, doesn't guarantee **strong consistency**
+
     - For each write; there's a primary and secondaries
     - two steps: client transmits data, gets ack and then sends append request; primary applies the *mutation* first and forwards the *mutation* request to secondaries; all primary and secondary must append for write to be successful
     - It could happen that some replicas have appended and some haven't; in this case the write is marked failure and client is expected to retry. 
-      - When retries successful, can end up with replicas with data in different order (since its append only, if a replica previously appended, it will append again on rety)
-      - can end up with inconsistent replica if the client dies before retrying. (some replicas would extra data than others- extra being data from failed writes)
+    - When retries successful, can end up with replicas with data in different order (since its append only, if a replica previously appended, it will append again on rety)
+    - can end up with inconsistent replica if the client dies before retrying. (some replicas would extra data than others- extra being data from failed writes)
     - Lease: handle split brain scenario; if master and primary got partitioned, it will only last for lease duration in worst case.
+
+
   - Issues:
     - single master load, running out of RAM
     - client is expected to handle inconsistencies,  more responsibilities on client
