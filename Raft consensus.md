@@ -44,7 +44,7 @@ Read this blog post [0] for overview of paxos and ZAB
   - Restrictions on which server maybe elected eg: maybe not servers which have lagged
   - achieves this during election; a server can only vote if the candidate's log is at least up-to-date as the server's; notice that if the candidate were to get majority of the vote, it will reach at least one server which has all entries from previous term (this is because there is at least one common item if you look at majority from two terms).
 
-
+Its worth going over the proofs of **Leader Completeness Property** (which states a new leader stores all log entries from a previous leader) and 
 
 [0] https://www.alibabacloud.com/blog/a-brief-analysis-of-consensus-protocol-from-logical-clock-to-raft_594675
 
