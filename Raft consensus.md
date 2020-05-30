@@ -6,6 +6,7 @@
 - more understandable than Paxos
 - inspired from ViewStamped Replication
 - uses majority voting concept/ available as long as majority of servers are available
+- decomposition of problems: separated leader election, log replication, safety, and membership changes.
 
 #### What are replicated state machines?
 
