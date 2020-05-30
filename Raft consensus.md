@@ -16,16 +16,18 @@ collection of state machines  in a cluster which can survive machine failure. Eg
 
 The consensus algorithm (Paxos, Raft) keeps the log consistent among the servers. Follow the steps in the figure above to get the feel of how it works.
 
-> Does zookeper use Paxos? => *No, it uses ZAB (Zookeper Atomic Broadcast)*
->
-> Why does zookeper not use Raft? => *Timing, zookeper started in 2007, raft in 2013*
+
 
 #### Problems with Paxos
 
 - Hard to understand, built into two phases which are not intuitive; 
 - No standard agreed upon algorithm, even Lamport didn't fully describe multi-paxos ; Chubby implements some version of Paxos but isnt published
 
+> Does zookeper use Paxos? => *No, it uses ZAB (Zookeper Atomic Broadcast)*
+>
+> Why does zookeper not use Raft? => *Timing, zookeper started in 2007, raft in 2013*
 
+Read this blog post [0] for overview of paxos and ZAB
 
 #### Raft Algorithm
 
@@ -42,3 +44,5 @@ The consensus algorithm (Paxos, Raft) keeps the log consistent among the servers
   - Restrictions on which server maybe elected eg: maybe not servers which have lagged
 
 
+
+[0] 
