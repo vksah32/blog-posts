@@ -17,5 +17,10 @@ The consensus algorithm (Paxos, Raft) keeps the log consistent among the servers
 
 
 
+#### Problems with Paxos
+
+- Hard to understand, built into two phases which are not intuitive; 
+- No standard agreed upon algorithm, even Lamport didn't fully describe multi-paxos ; Chubby implements some version of Paxos but isnt published
+
 
 
