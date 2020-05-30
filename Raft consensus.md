@@ -30,6 +30,8 @@ The consensus algorithm (Paxos, Raft) keeps the log consistent among the servers
 #### Raft Algorithm
 
 - Distinguished leader approach -> only leader accepts log entries from clients,  decides how to write to logs, replicates to other servers
+- Concept of term -> each term starts with an election for a leader; serves as logical clock and represneted by sequential intergers
+- 
 - Leader election
   - 
 - Log replication
