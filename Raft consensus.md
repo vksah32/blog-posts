@@ -27,3 +27,8 @@ The consensus algorithm (Paxos, Raft) keeps the log consistent among the servers
 
 
 
+#### Raft Algorithm
+
+- Distinguished leader approach -> only leader decides how to write to logs, accepts log entries from clients
+
+
