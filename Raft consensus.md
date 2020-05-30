@@ -13,5 +13,9 @@ collection of state machines  in a cluster which can survive machine failure. Eg
 
 ![Screen Shot 2020-05-30 at 11.57.19 AM](https://raw.githubusercontent.com/vksah32/screenshots/master/Screen_Shot_2020-05-30_at_11.57.19_AM.png)
 
-The consensus algorithm (Paxos, Raft) keeps the log synced among the servers
+The consensus algorithm (Paxos, Raft) keeps the log consistent among the servers. Follow the steps in the figure above to get the feel of how it works.
+
+
+
+
 
