@@ -37,7 +37,7 @@ The consensus algorithm (Paxos, Raft) keeps the log consistent among the servers
   - Leader accepts log entry from client
   - leader replicates it to majority of servers
   - then, it applies it to its own state machine=> *committed*
-  - It sends message to all followers that it has committed certain log entries; then the followers apply those log entries to their own state machine.
+  - It sends message to all followers that it has committed certain log entries; then the followers apply those log entries to their own state machine.    
 - Safety 
 
 
