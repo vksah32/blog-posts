@@ -31,9 +31,8 @@ The consensus algorithm (Paxos, Raft) keeps the log consistent among the servers
 
 - Distinguished leader approach -> only leader accepts log entries from clients,  decides how to write to logs, replicates to other servers
 - Concept of term -> each term starts with an election for a leader; serves as logical clock and represneted by sequential intergers
-- 
 - Leader election
-  - 
+  - when a follower doesnt get heartbeat from leader, it starts an election; promotes itself to *candidate* and requests vote from other servers; if it receives majority, then it promotes itself to leader and sends heartbeat to tell others who's the boss; if no leader selection; election will continue; use of random election timeouts to prevent split voting; each server uses first come first serve to asign votes.
 - Log replication
 - Safety 
 
