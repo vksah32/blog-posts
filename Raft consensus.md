@@ -45,4 +45,5 @@ Read this blog post [0] for overview of paxos and ZAB
 
 
 
-[0] 
+[0] https://www.alibabacloud.com/blog/a-brief-analysis-of-consensus-protocol-from-logical-clock-to-raft_594675
+
