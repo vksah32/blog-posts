@@ -27,7 +27,7 @@ The consensus algorithm (Paxos, Raft) keeps the log consistent among the servers
 >
 > Why does zookeper not use Raft? => *Timing, zookeper started in 2007, raft in 2013*
 
-Read this blog post [0] for overview of paxos and ZAB
+Read this [blog post from Alibaba-cloud]( https://www.alibabacloud.com/blog/a-brief-analysis-of-consensus-protocol-from-logical-clock-to-raft_594675) for overview of paxos and ZAB (and raft too)
 
 #### Raft Algorithm
 
@@ -46,5 +46,11 @@ Read this blog post [0] for overview of paxos and ZAB
 
 Its worth going over the proofs of **Leader Completeness Property** (which states a new leader stores all log entries from a previous leader) and **State Machine Safety Property** 
 
-[0] https://www.alibabacloud.com/blog/a-brief-analysis-of-consensus-protocol-from-logical-clock-to-raft_594675
+
+
+-------------------------
+
+[0]
+
+
 
