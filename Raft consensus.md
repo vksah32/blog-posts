@@ -44,7 +44,7 @@ Read this [blog post from Alibaba-cloud]( https://www.alibabacloud.com/blog/a-br
   - Restrictions on which server maybe elected eg: maybe not servers which have lagged
   - achieves this during election; a server can only vote if the candidate's log is at least up-to-date as the server's; notice that if the candidate were to get majority of the vote, it will reach at least one server which has all entries from previous term (this is because there is at least one common item if you look at majority from two terms).
 
-Its worth going over the proofs of **Leader Completeness Property** (which states a new leader stores all log entries from a previous leader) and **State Machine Safety Property** 
+Its worth going over the proofs [ in Section 5.4.3 of the paper] of **Leader Completeness Property** (which states a new leader stores all log entries from a previous leader) and **State Machine Safety Property** ( which states that if a server has applied a log entry at a given index to its state machine, no other server will ever apply a different log entry for the same index.)
 
 
 
