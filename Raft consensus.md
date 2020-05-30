@@ -17,7 +17,7 @@ The consensus algorithm (Paxos, Raft) keeps the log consistent among the servers
 
 > Does zookeper use Paxos? => *No, it uses ZAB (Zookeper Atomic Broadcast)*
 >
-> 
+> Why does zookeper not use Raft? => *Timing, zookeper started in 2007, raft in 2013*
 
 #### Problems with Paxos
 
