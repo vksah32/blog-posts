@@ -42,6 +42,7 @@ Read this blog post [0] for overview of paxos and ZAB
   - It sends message to all followers that it has committed certain log entries; then the followers apply those log entries to their own state machine.    
 - Safety 
   - Restrictions on which server maybe elected eg: maybe not servers which have lagged
+  - achieves this during election; a server can only vote if the candidate's log is at least up-to-date as the server's; notice that if the candidate were to get majority of the vote, it will reach at least one server which has all entries from previous term (this is because there is at least one common item if you look at majority from two terms).
 
 
 
