@@ -31,6 +31,8 @@ Read this [blog post from Alibaba-cloud]( https://www.alibabacloud.com/blog/a-br
 
 #### Raft Algorithm
 
+Please refer to figure 2 of Extended raft paper for detailed overview.
+
 - Distinguished leader approach -> only leader accepts log entries from clients,  decides how to write to logs, replicates to other servers
 - Concept of term -> each term starts with an election for a leader; serves as logical clock and represneted by sequential intergers
 - Leader election
