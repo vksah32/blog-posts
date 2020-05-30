@@ -15,7 +15,7 @@ collection of state machines  in a cluster which can survive machine failure. Eg
 
 The consensus algorithm (Paxos, Raft) keeps the log consistent among the servers. Follow the steps in the figure above to get the feel of how it works.
 
-
+> Does zookeper use Paxos? No, it uses ZAB (Zookeper Atomic Broadcast)
 
 #### Problems with Paxos
 
