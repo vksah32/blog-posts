@@ -57,5 +57,5 @@ Its worth going over the proofs [ in Section 5.4.3 of the paper] of **Leader Com
 Useful links:
 
 - [Student's guide to Raft](https://thesquareplanet.com/blog/students-guide-to-raft/)
-- 
+- [Raft's locking advice](https://pdos.csail.mit.edu/6.824/labs/raft-locking.txt)
 
