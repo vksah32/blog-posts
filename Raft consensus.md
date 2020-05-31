@@ -38,11 +38,11 @@ Please refer to figure 2 of Extended raft paper for detailed overview.
 - Distinguished leader approach -> only leader accepts log entries from clients,  decides how to write to logs, replicates to other servers
 - Concept of term -> each term starts with an election for a leader; serves as logical clock and represneted by sequential intergers
 - Leader election
-  - when a follower doesnt get heartbeat from leader, it starts an election; promotes itself to *candidate* and requests vote from other servers; if it receives majority, then it promotes itself to leader and sends heartbeat to tell others who's the boss; if no leader selection; election will continue; use of random election timeouts to prevent split voting; each server uses first come first serve to asign votes.
+	- when a follower doesnt get heartbeat from leader, it starts an election; promotes itself to *candidate* and requests vote from other servers; if it receives majority, then it promotes itself to leader and sends heartbeat to tell others who's the boss; if no leader selection; election will continue; use of random election timeouts to prevent split voting; each server uses first come first serve to asign votes.
 - Log replication
-  - Leader accepts log entry from client
-  - leader replicates it to majority of servers
-  - then, it applies it to its own state machine=> *committed*
+	- Leader accepts log entry from client
+	- leader replicates it to majority of servers
+	- then, it applies it to its own state machine=> *committed*
   - It sends message to all followers that it has committed certain log entries; then the followers apply those log entries to their own state machine.    
 - Safety 
   - Restrictions on which server maybe elected eg: maybe not servers which have lagged
