@@ -58,5 +58,5 @@ Useful links:
 
 - [Student's guide to Raft](https://thesquareplanet.com/blog/students-guide-to-raft/)
 - [Raft's locking advice](https://pdos.csail.mit.edu/6.824/labs/raft-locking.txt)
-- Raft's striu
+- Raft's structure advice
 
