@@ -23,7 +23,7 @@ The consensus algorithm (Paxos, Raft) keeps the log consistent among the servers
 #### Problems with Paxos
 
 - Hard to understand, built into two phases which are not intuitive; 
-- No standard agreed upon algorithm, even Lamport didn't fully describe multi-paxos ; Chubby implements some version of Paxos but isnt published
+- No standard agreed upon algorithm, even Lamport didn't fully describe multi-paxos ; Chubby implements some version of Paxos but isnt published (some version of it published here : [Paxos made live](https://www.cs.utexas.edu/users/lorenzo/corsi/cs380d/papers/paper2-1.pdf))
 
 > Does zookeper use Paxos? => *No, it uses ZAB (Zookeper Atomic Broadcast)*
 >
@@ -59,4 +59,5 @@ Useful links:
 - [Student's guide to Raft](https://thesquareplanet.com/blog/students-guide-to-raft/)
 - [Raft's locking advice](https://pdos.csail.mit.edu/6.824/labs/raft-locking.txt)
 - [Raft's structure advice](https://pdos.csail.mit.edu/6.824/labs/raft-structure.txt)
+- 
 
