@@ -1,5 +1,7 @@
 # Raft Consensus
 
+Context: I am implementing Raft in lab 2 of MIT's distributed system's course. 
+
 ## Overview
 
 - consensus algorithm for managing a replicated log
@@ -49,4 +51,11 @@ Please refer to figure 2 of Extended raft paper for detailed overview.
 Its worth going over the proofs [ in Section 5.4.3 of the paper] of **Leader Completeness Property** (which states a new leader stores all log entries from a previous leader) and **State Machine Safety Property** ( which states that if a server has applied a log entry at a given index to its state machine, no other server will ever apply a different log entry for the same index.)
 
 
+
+
+
+Useful links:
+
+- [Student's guide to Raft](https://thesquareplanet.com/blog/students-guide-to-raft/)
+- 
 
