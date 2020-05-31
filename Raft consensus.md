@@ -54,7 +54,7 @@ Its worth going over the proofs [ in Section 5.4.3 of the paper] of **Leader Com
 
 #### Condensed summary (figure 2 in the paper)
 
-
+![Screen Shot 2020-05-31 at 1.17.41 PM](https://raw.githubusercontent.com/vksah32/screenshots/master/Screen_Shot_2020-05-31_at_1.17.41_PM.png)
 
 
 
