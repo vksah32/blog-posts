@@ -13,10 +13,10 @@ main = do
 To run it:
 
 ```bash
+# to compile
 stack ghc hello.hs
-# ^ compiles
 
 ./hello # to run
-
+"hello world"
 ```
 
