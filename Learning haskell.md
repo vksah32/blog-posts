@@ -36,9 +36,10 @@ Chapter 1 -
 - Lambda functions- anonymous functions eg:
 
 	```haskell
+	(\x -> x*2) 2
+	=> 4
+```
 	
-	```
-
 	
 
 
