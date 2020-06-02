@@ -33,6 +33,8 @@ Chapter 1 -
 	- A function must always return a value.
 	- Calling the same function with the same argument must always return the same result.”
 
+- Use of `where` to define a variable in a function
+
 - Lambda functions- anonymous functions eg:
 
 	```haskell
