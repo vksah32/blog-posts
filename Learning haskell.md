@@ -28,5 +28,18 @@ Now, following `Get programming with haskell` from Manning.
 
 Chapter 1 -
 
+- restrictions on a function:
+	- A function must always take an argument.
+	- A function must always return a value.
+	- Calling the same function with the same argument must always return the same result.”
+
+- Lambda functions- anonymous functions eg:
+
+	```haskell
+	
+	```
+
+	
+
 
 
