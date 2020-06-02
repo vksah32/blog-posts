@@ -26,5 +26,7 @@ I looked into "learn you a haskell for greater good". found it lacking in terms 
 
 Now, following `Get programming with haskell` from Manning.
 
+Chapter 1 -
+
 
 
