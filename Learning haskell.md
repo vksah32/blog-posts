@@ -24,5 +24,7 @@ stack ghc hello.hs
 
 I looked into "learn you a haskell for greater good". found it lacking in terms of practical examples. I tried to follow `Haskell school of music` , but got lost in music concepts.
 
-Now, following 
+Now, following `Get programming with haskell` from Manning.
+
+
 
