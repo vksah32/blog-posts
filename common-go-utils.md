@@ -39,9 +39,61 @@ dec := json.NewDecoder(file)
 
 ```
 
+### 2. Parse Time
+
+```go
+
+func main() {
+  now := time.Now()
+  
+	startTime := "2020-05-06 09:30"
+	t,_ := time.Parse("2006-01-02 15:04", startTime)
+  
+	secs := now.Unix()
+	nanos := now.UnixNano()
+  millis := nanos / 1000000
+}
+```
+
+### 3. Call a http endpoint and parse JSON response
+
+```go
+
+// don't have to specify all fields, only ones useful
+// use https://mholt.github.io/json-to-go/ to automatically generate go structs
+type apiResponse struct {
+	FieldA       string     `json:"fieldA"`
+	FieldB       fieldBStruct `json:"fieldB"`
+}
+
+type fieldBStruct {
+	FieldA   string   `json:"fieldC"`
+}
+
+func callEndpoint() apiResponse {
+	endpointURL := "http://somesite.com/endpoint"
+	resp, err := http.Get(endpointURL)
+	if err != nil {
+		log.Panicln(err)
+	}
+	defer resp.Body.Close()
+	body, readErr := ioutil.ReadAll(resp.Body)
+	// log.Println(string(body))
+	if readErr != nil {
+		log.Fatal(readErr)
+	}
+	response := apiResponse{}
+	err = json.Unmarshal(body, &response)
+	if err != nil {
+		log.Panicln(err)
+	}
+	return response
+}
 
 
-### 2. Send slack message to a channel
+```
+
+### 4. Send slack message to a channel
 
 - create an app in slack
 
