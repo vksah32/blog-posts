@@ -56,5 +56,11 @@
   docker service logs {{service_name}}
   ```
 
-  
 
+- Delete a stack
+
+	```bash
+	docker stack rm {{stack_name}}
+	```
+
+	
