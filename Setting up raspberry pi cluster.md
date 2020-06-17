@@ -16,12 +16,15 @@ Optional: Change default ubuntu user on master ([guide](https://www.digitalocean
 - Install docker and `docker-compose` ([guide](https://linuxconfig.org/how-to-install-docker-on-ubuntu-20-04-lts-focal-fossa)) on master and all slaves
 
 	```bash
+	#docker
 	sudo apt install docker.io
 	sudo systemctl enable --now docker
 	
-	#docker compose
+	#docker-compose
+	
 	sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 	
+	sudo chmod +x /usr/local/bin/docker-compose
 	```
 
 - Initialize swarm on master
