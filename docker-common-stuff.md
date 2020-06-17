@@ -38,6 +38,14 @@
   docker logs {{container_name}}
   ```
 
+- [Swarm] deploy a stack
+
+  ```
+  docker stack deploy --compose-file docker-compose.yml stackdemo
+  ```
+
+  
+
 - list all stacks
 
   ```bash
