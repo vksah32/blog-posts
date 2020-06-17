@@ -1,4 +1,4 @@
-# Common bash stuff
+# Common terminal/bash stuff
 
 - Use shellcheck for automatic checking. See [koalaman/shellcheck](https://github.com/koalaman/shellcheck)
 
@@ -49,4 +49,20 @@
 other comparators:  `-eq`, `-ne`, `-lt`, `-le`, `-gt`, or `-ge`
 
 
+
+### ssh stuff
+
+- Start ssh-agent process
+
+	```bash
+	eval `ssh-agent -s`
+	```
+
+- Add a key to ssh-agent
+
+	```bash
+	ssh-add ~/.ssh/id_rsa
+	```
+
+	
 
