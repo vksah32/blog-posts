@@ -57,13 +57,13 @@ func main() {
 
 // Parse from strign timestamp to a go time object
 
-func parseTs(ts string) {
+func parseTs(ts string) time.Time {
 		i, err := strconv.ParseInt(ts, 10, 64)
     if err != nil {
         panic(err)
     }
-    tm := time.Unix(i, 0)
-    fmt.Println(tm)
+    return time.Unix(i, 0)
+    
 }
 ```
 
