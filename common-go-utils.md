@@ -53,6 +53,18 @@ func main() {
 	nanos := now.UnixNano()
   millis := nanos / 1000000
 }
+
+
+// Parse from strign timestamp to a go time object
+
+func parseTs(ts string) {
+		i, err := strconv.ParseInt(ts, 10, 64)
+    if err != nil {
+        panic(err)
+    }
+    tm := time.Unix(i, 0)
+    fmt.Println(tm)
+}
 ```
 
 ### 3. Call a http endpoint and parse JSON response
