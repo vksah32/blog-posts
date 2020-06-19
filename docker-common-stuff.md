@@ -71,4 +71,13 @@
 	docker stack rm {{stack_name}}
 	```
 
+- Restart docker on a node
+
+	```bash
+	docker systemctl stop docker
+	docker systemctl start docker
+	
+	
+	```
+
 	
