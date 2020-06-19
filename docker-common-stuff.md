@@ -74,7 +74,7 @@
 - Restart docker on a node
 
 	```bash
-	docker systemctl stop docker
+	sudo systemctl stop docker
 	docker systemctl start docker
 	
 	
