@@ -40,9 +40,19 @@ Chapter 1 -
 	```haskell
 	(\x -> x*2) 2
 	=> 4
+	```
 ```
 	
 	
 
 
 
+
+```
+
+-- <--->-----
+
+
+
+- look into category theory
+- 
