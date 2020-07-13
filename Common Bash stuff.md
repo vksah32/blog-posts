@@ -48,7 +48,13 @@
 
 other comparators:  `-eq`, `-ne`, `-lt`, `-le`, `-gt`, or `-ge`
 
+- Find a string in a directory
 
+	```shell
+	grep -rnw './path/dir' -e 'stringToSearch'
+	```
+
+	
 
 ### ssh stuff
 
