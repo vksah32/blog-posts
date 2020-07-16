@@ -80,4 +80,6 @@
 	
 	```
 
+- After restart of nodes, docker doesn't rebalance
+
 	
