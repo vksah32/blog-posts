@@ -55,4 +55,40 @@ Chapter 1 -
 
 
 - look into category theory
-- 
+
+
+
+## Haskell cookbook
+
+- Chapter 1 : Setup
+
+	```bash
+	#create project
+	stack new project_name
+	
+	#build it
+	cd project_name
+	# modify app/Main.hs 
+	stack build
+	
+	#to run it
+	stack exec -- project_name-exe
+	```
+
+	
+
+- Chapter 2 : data types
+
+	type class  = interface ? like `Num` and `Eq`
+
+	data is more like a struct eg:
+
+	```haskell
+	data Something = Something { a :: Double, b :: Double} deriving Show
+	```
+
+	Called Type-constructor, data constructor and record syntax; note each field is a function which returns its value given data object so `a someQuadratic` will return `someQuadratic.a` / can also create anonymous fields ` data Something = Something Double Double`
+
+	
+
+	
