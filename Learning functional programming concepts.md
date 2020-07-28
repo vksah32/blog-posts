@@ -12,5 +12,5 @@
 
 - Look at [A Tutorial introduction to lambda calculus](https://personal.utdallas.edu/~gupta/courses/apl/lambda.pdf) to get a taste of it; I got lost in those symbols/lambda definitions of successors and other operators; not sure how anyone came up with those.
 
-
+- The paper linked me to this book: An introductuction to Functional Programming through Lambda Calculus
 
